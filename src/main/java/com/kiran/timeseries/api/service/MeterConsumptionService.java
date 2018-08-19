@@ -78,42 +78,5 @@ public class MeterConsumptionService {
         });
         return new ConsumptionWeeklySummary(meterId, summaryMap);
     }
-//    public Meter getMeterById(long id) {
-//        return meterRepository.findMeterByMeterId(id);
-//    }
-//
-//    public Page<Meter> getAllMeters(Integer page, Integer size) {
-//        Page pageOfMeters = meterRepository.findAll(new PageRequest(page, size));
-//        // example of adding to the /metrics
-////        if (size > 50) {
-////            counterService.increment("Khoubyari.HotelService.getAll.largePayload");
-////        }
-//        return pageOfMeters;
-//    }
-//
-//    public Meter getTimeSeries(Date inputDate, String customerId) {
-//
-//
-//        List<Meter> meterList = (List<Meter>) meterRepository.findAll();
-////		Map<String, Double> valuesMap = new HashMap<String, Double>();
-//
-////		for(Meter m : meterList) {
-//////			String fromDate = m.getFromDate();
-////
-////			LocalDate date1 = LocalDate.parse(fromDate, DateTimeFormatter.ISO_OFFSET_DATE_TIME);
-////			String formattedFromDate = date1.toString();
-////
-////			if(inputDate.equals(formattedFromDate) && customerId.equals(m.getCustomerId())) {
-//////				valuesMap.putAll(m.getHourlyConsumption());
-////				return m.getHourlyConsumption();
-////			}
-////		}
-//
-//        return null;
-//    }
-//
-//    public Meter getTimeSeriesByMeterId(String meterId) {
-//        List<Meter> meterList = (List<Meter>) meterRepository.findFirstMeterByMeterIdOrderByFromDateDesc(meterId);
-//        return meterList.get(0);
-//    }
+
 }
